@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap-fluid-adj.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
+
+    <title>{% block title %}How to add bootsrap with Django!{% endblock %}</title>
+    <script src="{% static 'js/jquery-2.0.3.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+			<h2>Django Template</h2>
+	</nav>              
+     {% block body_block %}
+        <div class="hero-unit">
+        <div class="container">
+        <div class="span6">
+        <h4>About Account</h4>
+            This is <strong>Account's about page</strong>.<br/>
+            <img src="{% static 'images/timor leste.gif' %}" alt="Picture of Rango" />
+        </div>
+        </div> 
+        </div>     
+    {% endblock %}
+    
+    <div class="container"
+    <div id="content">
+     {% block content %}{% endblock %}
+    </div>
+    </div>
+</body>
+</html>
+
+
+

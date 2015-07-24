@@ -1,0 +1,9 @@
+maneira atu aumenta fiel iha models ruma ita presija halo makemigrations ho migrate
+
+
+atu hamate user sira atu ne teki hamate iha
+
+1.def post nian 
+ #user = account_form.cleaned_data['user']
+
+

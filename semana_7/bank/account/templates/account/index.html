@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h4>Accounts</h4>
+    <ul>
+    {% for account in accounts %}
+        <li> Account: {{account}} </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
+
+
+
+
